@@ -45,3 +45,20 @@
 
 ![alt text](image-7.png)
 
+--mengecek table yang masuk di phpmyadmin
+
+![alt text](image-8.png)
+
+--Buat table database dengan migration untuk table m_kategori yang sama-sama tidak 
+memiliki foreign key
+
+![alt text](image-9.png)
+
+--di migrasi ke phpmyadmin
+
+![alt text](image-10.png)
+
+--pengecekan ke phpmyadmin
+
+![alt text](image-11.png)
+
