@@ -49,7 +49,7 @@
 
 ![alt text](image-8.png)
 
---Buat table database dengan migration untuk table m_kategori yang sama-sama tidak 
+--Buat table database dengan migration untuk table m_kategori yang sama-sama tidak
 memiliki foreign key
 
 ![alt text](image-9.png)
@@ -62,3 +62,21 @@ memiliki foreign key
 
 ![alt text](image-11.png)
 
+--membuat create -m_user table
+
+![alt text](image-12.png)
+
+--edit file migration m_user tabel
+
+![alt text](image-13.png)
+
+--membuat dan mengedit file migration m_barang, t_penjualan, t_stok, t_penjualan_detail
+
+![alt text](image-14.png)
+
+![alt text](image-15.png)
+![alt text](image-16.png)
+
+--mengecek di localhost phpmyadmin
+
+![alt text](image-17.png)
