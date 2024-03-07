@@ -112,3 +112,45 @@ memiliki foreign key
 --
 ![alt text](image-27.png)
 --
+![alt text](image-28.png)
+--
+![alt text](image-29.png)
+![alt text](image-30.png)
+
+--insert data baru ke table m_level menggunakan controller
+![alt text](image-31.png)
+![alt text](image-32.png)
+
+--update data baru ke table m_level menggunakan controller
+![alt text](image-33.png) 
+![alt text](image-34.png)
+
+--menghapus data cus dari m_level
+![alt text](image-35.png)
+![alt text](image-36.png)
+
+-- menampilkan data dari table m_level lewat views menggunakan controller
+
+![alt text](image-37.png)
+
+-- insert data table m_kategori
+
+![alt text](image-38.png)
+
+![alt text](image-39.png)
+
+-- update data
+
+![alt text](image-40.png)
+--snack menjadi cemilan
+![alt text](image-41.png)
+
+--hapus data cemilan 
+![alt text](image-42.png)
+--kategori cemilan telah terhapus
+![alt text](image-43.png)
+
+--menampilkan data table kategori dari database
+![alt text](image-44.png)
+
+--
