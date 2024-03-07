@@ -80,3 +80,35 @@ memiliki foreign key
 --mengecek di localhost phpmyadmin
 
 ![alt text](image-17.png)
+
+--membuat seeder LevelSeeder dengan php artisan
+
+![alt text](image-18.png)
+
+![alt text](image-19.png)
+
+--seeding database ke table m_level
+
+![alt text](image-20.png)
+![alt text](image-21.png)
+
+--membuat file user seeder
+
+![alt text](image-22.png)
+
+--seeding class user
+
+![alt text](image-23.png)
+
+--mengecek kolom table user di phpmyadmin
+
+![alt text](image-24.png)
+
+--seeder kategori, barang, stok, penjualan, detail penjualan
+--
+![alt text](image-25.png)
+--
+![alt text](image-26.png)
+--
+![alt text](image-27.png)
+--
