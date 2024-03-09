@@ -11,7 +11,34 @@ class UserController extends Controller
 {
     public function index()
     {
-        $user = UserModel::where('username', 'manager9')->firstOrFail();
+        $user = UserModel::firstOrNew([
+            'username' => 'manager33',
+            'nama' => 'Manager tiga tiga',
+            'password' => Hash::make('12345'),
+            'level_id' => 2
+        ],);
+        $user->save();
+
+        // $user = UserModel::firstOrNew([
+        //     'username' => 'manager',
+        //     'nama' => 'Manager',
+        // ],);
+
+        // $user = UserModel::firstOrCreate([
+        //     'username' => 'manager22',
+        //     'nama' => 'Manager dua dua',
+        //     'password' => Hash::make('12345'),
+        //     'level_id' => 2
+        // ],);
+
+        // $user = UserModel::firstOrCreate([
+        //     'username' => 'manager',
+        //     'nama' => 'Manager',
+        // ],);
+
+        // $user = UserModel::where('level_id', 2)->count();
+
+        // $user = UserModel::where('username', 'manager9')->firstOrFail();
 
         // $user = UserModel::findOrFail(1);
 

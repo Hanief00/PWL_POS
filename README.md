@@ -54,3 +54,34 @@
 
 ![alt text](image-8.png)
 
+--ketika melakukan count tampilah browser hanya menampilkan sebuah attention di usercontroller baris 15
+
+![alt text](image-9.png)
+
+--mengubah tampilan view agar dapat menampilkan count dari jumlah pengguna berdasarkan level id tabel user
+
+![alt text](image-10.png)
+
+--disini menggunakan method firstOrCreate maka apabila data ditemukan maka akan ditampilkan apabila tidak ketemu maka akan di inssert ke dalam tabel, berhubung disini data nya ketemu maka hasilnya akan ditampilkan ke web dan tidak menambahkan data apapun ke tabel
+
+![alt text](image-11.png)
+
+--disini ditampilkan manager dua dua yang sebelumnya tidak ada di dalam kolom tabel maka akan di tambahkan ke dalamnya
+
+![alt text](image-12.png)
+
+![alt text](image-13.png)
+
+--disini menggunakan method firstOrNew sedangkan data yang diambil sudah tersedia di tabel maka hanya menampilkan data yang diambil saja
+
+![alt text](image-14.png)
+
+--sama seperti sebelumnya pada method ini menampilkan data manager 33 yang sebelumnya tidak ada di kolom tabel maka sekaligus ditambahkan ke dalam tabel user di database
+
+![alt text](image-15.png)
+![alt text](image-16.png)
+
+--lalu agar method create dan new tadi bisa tersimpan maka digunakan lah method save agar tersimpan dengan baik di dalam database.
+
+![alt text](image-17.png)
+
