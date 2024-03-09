@@ -46,3 +46,11 @@
 
 ![alt text](image-6.png)
 
+--penggunaan findOrFail
+
+![alt text](image-7.png)
+
+--hasil apabila retrieve data fail
+
+![alt text](image-8.png)
+
