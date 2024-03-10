@@ -9,22 +9,30 @@ use Illuminate\Http\Request;
 
 class UserController extends Controller
 {
+    public function tambah() {
+        return view('user_tambah');
+    }
+    
+
     public function index()
     {
-        $user = UserModel::create([
-            'username' => 'manager11',
-            'nama' => 'Manager11',
-            'password' => Hash::make('12345'),
-            'level_id' => 2
-        ],);
-        $user->username = 'manager12';
 
-        $user->wasChanged(); //true
-        $user->wasChanged('username'); //true
-        $user->wasChanged(['username', 'level_id']); //true
-        $user->wasChanged('nama'); //false
-        $user->wasChanged(['nama', 'username']); //true
-        dd($user->wasChanged(['nama', 'username']));
+        $user = UserModel::all(); //CRUD
+
+        // $user = UserModel::create([
+        //     'username' => 'manager11',
+        //     'nama' => 'Manager11',
+        //     'password' => Hash::make('12345'),
+        //     'level_id' => 2
+        // ],);
+        // $user->username = 'manager12';
+
+        // $user->wasChanged(); //true
+        // $user->wasChanged('username'); //true
+        // $user->wasChanged(['username', 'level_id']); //true
+        // $user->wasChanged('nama'); //false
+        // $user->wasChanged(['nama', 'username']); //true
+        // dd($user->wasChanged(['nama', 'username']));
 
         // $user = UserModel::create([
         //     'username' => 'manager55',
@@ -185,7 +193,5 @@ class UserController extends Controller
 
         // $user = UserModel::all();
         // return view('user', ['data' => $user]);
-
-
     }
 }

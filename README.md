@@ -99,4 +99,11 @@
 
 ![alt text](image-21.png)
 
---
+--membuat halaman CRUD
+
+![alt text](image-22.png)
+
+--menampilkan fitur tambah user pada view user
+
+![alt text](image-23.png)
+
