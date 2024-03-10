@@ -85,3 +85,18 @@
 
 ![alt text](image-17.png)
 
+--pada tampilan web hanya mengembalikan code dump pada percobaan praktikum yaitu mengembalikan nilai method isdirty yang menghasilkan false
+
+![alt text](image-18.png)
+
+--berikut ketika menampilkan data manager55 yang sebelum nya tidak ada akan ditambahkan dengan create melalui isdirty dan isclean
+
+![alt text](image-19.png)
+
+--pada code dump yang diberikan mengembalikan nilai false dari nama dan username karena username tidak berubah 
+
+![alt text](image-20.png)
+
+![alt text](image-21.png)
+
+--
