@@ -7,17 +7,58 @@ use App\Models\UserModel;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Http\Request;
 
+use function PHPUnit\Framework\returnValueMap;
+
 class UserController extends Controller
 {
     public function tambah() {
         return view('user_tambah');
     }
     
+    public function tambah_simpan(Request $request) {
+        UserModel::create([
+            'username' => $request->username,
+            'nama' => $request-> nama,
+            'password'=> Hash::make('request->password'),
+            'level_id' => $request->level_id
+        ]);
+
+        return redirect('/user');
+    }
+
+    function ubah($id)
+    {
+        $user = User::find($id);
+        return view('user_ubah', ['data' => $user]);
+    }
+
+    function ubah_simpan($id,Request $request) {
+        $user =UserModel::find($id);
+
+        $user->username = $request->username;
+        $user->nama = $request->nama;
+        $user->password = Hash::make('$request->password');
+        $user->level_id = $request->level_id;
+
+        $user->save();
+
+        return redirect('/user');
+    }
+
+    function hapus($id) {
+        $user = User::find($id);
+        $user->delete();
+
+        return redirect('/user');
+    }
 
     public function index()
     {
+        $user = UserModel::with('level')->get();
+        // dd($user);
 
-        $user = UserModel::all(); //CRUD
+        // $user = UserModel::all(); //CRUD
+        return view('user', ['data' => $user]);
 
         // $user = UserModel::create([
         //     'username' => 'manager11',
@@ -96,7 +137,8 @@ class UserController extends Controller
         // $user = UserModel::firstWhere('level_id', 1);
         // $user = UserModel::find(1);
 
-        return view('user', ['data' => $user]);
+        // return view('user', ['data' => $user]);
+      
 
         //=========================jobsheet 3================================
         // $data = [

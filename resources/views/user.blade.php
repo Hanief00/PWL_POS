@@ -8,7 +8,7 @@
 </head>
 <body>
     <h1>Data User</h1>
-    <a href="/user/tambah">+ tambah user</a>
+    <h2><a href="tambah">+ tambah user</a></h2>
     <table border="1" cellpanding="2" cellspacing="0">
         <tr>
             {{-- <th>Jumlah Pengguna</th> --}}
@@ -27,7 +27,7 @@
                 <td>{{$d->username}}</td>
                 <td>{{$d->nama}}</td>
                 <td>{{$d->level_id}}</td>
-                <td><a href="/user/ubah/{{$d->user_id}}">Ubah</a> | <a href="/user/hapus/{{$d->user_id}}">Hapus</a></td>
+                <td><a href="user/ubah/{{$d->user_id}}">Ubah</a> | <a href="user/hapus/{{$d->user_id}}">Hapus</a></td>
             </tr>
         @endforeach
         {{-- <tr>

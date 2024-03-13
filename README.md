@@ -93,7 +93,7 @@
 
 ![alt text](image-19.png)
 
---pada code dump yang diberikan mengembalikan nilai false dari nama dan username karena username tidak berubah 
+--pada code dump yang diberikan mengembalikan nilai false dari nama dan username karena username tidak berubah
 
 ![alt text](image-20.png)
 
@@ -107,3 +107,39 @@
 
 ![alt text](image-23.png)
 
+--ketika menjalankan di browser
+
+![alt text](image-24.png)
+
+--dan klik tombol tambah, lalu setelah menginputkan form dan klik simpan maka akan langsung tersimpan di database
+
+![alt text](image-25.png)
+![alt text](image-26.png)
+
+--lalu mengubah salah atu data diatas
+
+![alt text](image-27.png)
+
+--klik tombol ubah pada salah satu data
+
+![alt text](image-28.png)
+
+--lalu ubah sesuai keinginan kita
+
+![alt text](image-29.png)
+
+--isi form untuk mengubahnya
+
+![alt text](image-30.png)
+
+--setelah diubah
+
+![alt text](image-31.png)
+
+--lalu fitur untuk menghapus salah satu data, contohnya managerku123 akan dihapus, maka didalam kolom tabel akan terhapus
+
+![alt text](image-32.png)
+
+--menggunakan method belongsto untuk menampilkan seluruh data kolom tabel user
+
+![alt text](image-33.png)
