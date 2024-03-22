@@ -17,7 +17,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
 
 Route::get('/level', [LevelController::class, 'index']);
@@ -31,6 +31,9 @@ Route::get('/user/hapus/{id}', [UserController::class, 'hapus']);
 Route::get('/kategori', [KategoriController::class, 'index']);
 Route::get('/kategori/create', [KategoriController::class, 'create']);
 Route::post('/kategori', [KategoriController::class, 'store']);
+Route::put('/kategori/update/{id}', [KategoriController::class, 'update']);
+Route::get('/kategori/edit/{id}', [KategoriController::class, 'edit'])->name('kategori.edit');
+Route::delete('/kategori/delete/{id}', [KategoriController::class, 'destroy'])->name('kategori.destroy');
 
 // Route::get('/user/tambah', function() { 
 //     return view('user_tambah');
@@ -39,3 +42,10 @@ Route::post('/kategori', [KategoriController::class, 'store']);
 // Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+// Route::get('/home', function () {
+//     return view('welcome');
+// });
+
+// Route::get('/edit/{id}', [KategoriController::class, 'edit'])->name('kategori.edit');
+// Route::put('/update/{id}', [KategoriController::class, 'update'])->name('kategori.update');
+// Route::get('/delete/{id}', [KategoriController::class, 'destroy'])->name('kategori.delete');
