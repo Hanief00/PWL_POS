@@ -8,7 +8,7 @@
     <div class="container">
         <div class="card card-primary">
             <div class="card-header">
-                <h3 card="card-title">Buat Kategori Baru</h3>
+                <h3 card="card-title">Buat Kategori Baru</h3>                            
             </div>
 
             <form method="POST" action="../kategori">
